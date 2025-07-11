@@ -1,0 +1,205 @@
+/* SpotDetails.css */
+.container {
+  width: 600px; /* Set a max width for the container */
+  margin: 0 auto; /* Center the container */
+  padding: 2rem;
+  background-color: #ffffff; /* White background for the form */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center; /* Center the title */
+  margin-bottom: 1rem; /* Space below the title */
+}
+
+.error-message {
+  color: #e53e3e;
+  text-align: center; /* Center the error message */
+  margin-bottom: 1rem; /* Space below the error message */
+}
+
+.form-input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem; /* Space between inputs */
+  transition: border-color 0.3s;
+}
+
+.form-input:focus {
+  border-color: #3182ce;
+  outline: none;
+}
+
+.button {
+  width: 100%; /* Full width for buttons */
+  padding: 0.75rem;
+  border-radius: 4px;
+  color: white;
+  margin-top: 1rem; /* Space above buttons */
+  transition: background-color 0.3s;
+}
+
+.button-blue {
+  background-color: #4299e1;
+}
+
+.button-blue:hover {
+  background-color: #3182ce;
+}
+
+.button-green {
+  background-color: #48bb78;
+}
+
+.button-green:hover {
+  background-color: #38a169;
+}
+
+.button-purple {
+  background-color: #805ad5;
+}
+
+.button-purple:hover {
+  background-color: #6b46c1;
+}
+
+.image-preview {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.image-thumbnail {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 0.5rem;
+  transition: transform 0.3s;
+}
+
+.image-thumbnail:hover {
+  transform: scale(1.05);
+}
+
+.font-semibold {
+  font-weight: 600;
+  color: #333;
+}
+
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.spot-details-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #545b62;
+}
+
+.hotel-item,
+.attraction-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.hotel-item input,
+.hotel-item textarea,
+.attraction-item input,
+.attraction-item textarea {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.add-button {
+    background-color: #28a745;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    background-color: #218838;
+}
