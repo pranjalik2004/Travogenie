@@ -1,0 +1,130 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Search Box */
+.search-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-box h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Search Inputs */
+.search-inputs {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.search-inputs input,
+.search-inputs select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Search Button */
+.search-btn {
+    margin-top: 15px;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Flight Results */
+.flights-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.flights-container h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Flight Table */
+.flight-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.flight-table thead {
+    background-color: #007bff;
+    color: white;
+}
+
+.flight-table th, .flight-table td {
+    text-align: left;
+    padding: 12px;
+}
+
+.flight-table tbody tr {
+    border-bottom: 1px solid #ddd;
+    transition: 0.3s ease;
+}
+
+.flight-table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Availability */
+.available {
+    color: green;
+    font-weight: 600;
+}
+
+.sold-out {
+    color: red;
+    font-weight: 600;
+}
+
+/* Book Now Button */
+.book-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 8px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.book-btn:hover {
+    background-color: #218838;
+}

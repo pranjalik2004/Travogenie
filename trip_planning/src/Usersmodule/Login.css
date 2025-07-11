@@ -1,0 +1,144 @@
+/* Login.css */
+
+.login-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Ensure it appears above other content */
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.login-popup.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.login-popup-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px; /* Adjust width as needed */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateY(-20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+.login-popup-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-popup-title h2 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.login-popup-title img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.login-popup-title img:hover {
+  transform: scale(1.1);
+}
+
+.login-popup-inputs {
+  margin: 20px 0;
+}
+
+.login-popup-inputs input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+.login-popup-inputs input:focus {
+  border-color: #007bff; /* Change to your desired focus color */
+  outline: none;
+}
+
+.button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff; /* Primary button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #0056b3; /* Darker shade for hover */
+}
+
+.login-popup-condition {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the condition text */
+  margin-top: 10px; /* Add some space above */
+}
+
+.login-popup-condition input[type="checkbox"] {
+  transform: scale(1.2);
+  margin-right: px; /* Reduce space between checkbox and text */
+}
+
+.login-popup-condition p {
+  font-size: 0.9em;
+  color: black;
+  margin: 0; /* Remove default margin */
+
+}
+
+.login-popup p {
+  margin: 10px 0;
+  margin-right: 20px;
+  font-size: 0.9em;
+  color:black;
+  align-items: center;
+}
+
+.login-popup span {
+  color: #007bff;
+  cursor: pointer;
+  transition: color 0.3s;
+  align-items: center;
+}
+
+.login-popup span:hover {
+  color: #0056b3; /* Darker shade for hover */
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .login-popup-container {
+      width: 90%; /* Make it responsive on smaller screens */
+  }
+}

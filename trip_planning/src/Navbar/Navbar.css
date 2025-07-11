@@ -1,0 +1,144 @@
+header {
+    height: 60px;
+    size: 100px;
+    background-color: #ff6f00;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    
+    z-index: 100;
+    margin-right: 10px;
+    
+}
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+.navbar .nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 5px;
+    margin-right: 55px;
+    position: relative; /* To position dropdowns */
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: #f0c040; /* Highlight color on hover */
+}
+
+/* Dropdown Menu Styling */
+.navbar .dropdown-menu {
+    display: none; /* Hide dropdown by default */
+    position: absolute;
+    top: 100%; /* Position below the parent */
+    left: 10px;  
+    right: 10px;
+    background-color:white (0, 0, 0, 0.9);
+    border-radius: 5px;
+    padding: 5px; /* Adjust padding */
+    list-style-type: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 200;
+}
+
+/* Adjust dropdown menu for "Register" */
+.navbar .dropdown:nth-child(2) .dropdown-menu {
+    left: -40px; /* Move it closer to the Register menu */
+}
+
+/* Style for dropdown items */
+.navbar .dropdown-menu a {
+    color: white;
+    padding: 8px 15px; /* Smaller padding */
+    display: block;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 0.9rem; /* Smaller font size */
+    transition: background 0.3s ease;
+}
+
+.navbar .dropdown-menu a:hover {
+    background-color: #f0c040;
+    color: black;
+}
+
+/* Show dropdown on hover */
+.navbar .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.header-container .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+
+ul li:hover {
+    color: #ffe0b2;
+}
+
+
+/* Add these styles to your existing navbar.css */
+
+.profile-link {
+    display: inline-flex; /* Helps center the icon */
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; /* Remove underline from link */
+    padding: 5px; /* Optional padding around the icon */
+    border-radius: 50%; /* Make the background circular */
+    background-color: #e0e0e0; /* Light grey background */
+    width: 35px; /* Fixed width */
+    height: 35px; /* Fixed height */
+    transition: background-color 0.2s ease;
+  }
+  
+  .profile-link:hover {
+    background-color: #cccccc; /* Darker background on hover */
+  }
+  
+  .profile-icon {
+    font-size: 1.4em; /* Adjust emoji size */
+    line-height: 1; /* Prevent extra space */
+    color: #333; /* Color for the emoji */
+    /* No vertical-align needed with flexbox */
+  }
+  
+  /* If you use an image instead of emoji: */
+  .profile-icon-img {
+    width: 100%; /* Fill the link dimensions */
+    height: 100%;
+    border-radius: 50%; /* Ensure image is circular */
+    object-fit: cover; /* Cover the area nicely */
+  }
+  
+  /* Ensure the list item aligns nicely */
+  .nav-links li {
+    display: flex; /* Use flex for vertical alignment if needed */
+    align-items: center;
+  }

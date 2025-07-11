@@ -1,0 +1,160 @@
+/* Full Page Background */
+body {
+    background-color:whitesmoke; /* Crystal Black */
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color:#222
+  }
+  
+  /* Breadcrumb & Description Section */
+  .breadcrumb-container {
+    background-color: #222; /* Dark Gray */
+    padding: 15px;
+    width: 100vw; /* Full Width */
+    text-align: left;
+  }
+  
+  .breadcrumb {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: #ff9800;
+  }
+  
+  .breadcrumb-link {
+    text-decoration: none;
+    color: #ff9800;
+    font-weight: bold;
+  }
+  
+  .breadcrumb-link:hover {
+    text-decoration: underline;
+  }
+  
+  .breadcrumb-separator {
+    margin: 0 5px;
+    color: #bbb;
+  }
+  
+  .breadcrumb-current {
+    color: #bbb;
+    font-weight: normal;
+  }
+  
+  /* Where2Go Description */
+  .description-box {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px 0;
+    color: #bbb;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  /* Categories Section */
+  .category-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+  }
+  
+  .category {
+    background-color: #222;
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: #ff9800;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .category:hover {
+    background-color: #ff9800;
+    color: black;
+  }
+  
+  /* Destination Section */
+  .destination-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Destination Grid */
+  .destination-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Destination Cards */
+  .destination-card {
+    background: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .destination-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .destination-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .destination-info {
+    padding: 15px;
+  }
+  
+  .destination-name {
+    font-size: 1.5rem;
+    color: #ff9800;
+    margin-bottom: 5px;
+  }
+  
+  .destination-location {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .destination-description {
+    font-size: 0.9rem;
+    color: #bbb;
+    margin-bottom: 15px;
+  }
+  
+  /* Explore Button */
+  .explore-btn {
+    background-color: #ff9800;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .explore-btn:hover {
+    background-color: #e68900;
+  }
+
+  .placeholder-image {
+    width: 100%;
+    height: 200px; /* Adjust as needed */
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+    font-size: 14px;
+    text-align: center;
+}

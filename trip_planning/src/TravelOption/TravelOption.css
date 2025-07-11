@@ -1,0 +1,552 @@
+.cta-button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #f0c040;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #d89a2e;
+}
+
+
+
+.slideshow-container {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .slide {
+            display: none;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            font-weight: bold;
+            z-index: 2;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            font-size: 16px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        .statistics {
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .functionalities {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .scroll-link {
+            color: white;
+            text-decoration: none;
+        }
+
+      /* Slideshow container */
+      .slideshow-container {
+            width: 100%;
+            height: 90vh; /* Full height */
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Slides (as backgrounds) */
+        .slide {
+            display: none;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Text overlay */
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        /* Pagination dots */
+        .dots-container {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .dot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            margin: 0 5px;
+            background-color: #ccc;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .active-dot {
+            background-color: #333;
+        }
+/* Travel Options Section */
+.travel-options {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 1rem;
+}
+
+.travel-options .option {
+    text-align: center;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.travel-options .option .icon {
+    width: 80px;
+    height: 80px;
+    
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px auto;
+}
+
+.travel-options .option .icon img {
+    width: 70px;
+    height: 70px;
+}
+
+.travel-options .option:hover {
+    transform: translateY(-10px);
+}
+
+/* Explore Spots Section */
+.explore-spots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem 1rem;
+    gap: 1rem;
+}
+
+.explore-spots .spot {
+    text-align: center;
+    width: 150px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.explore-spots .spot .icon {
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.explore-spots .spot .icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.explore-spots .spot:hover {
+    transform: scale(1.1);
+}
+
+/* Search Bar Section */
+.search-bar {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.popup {
+    display: none;
+    background-color: #ffcc80;
+    padding: 1rem;
+    margin: 1rem auto;
+    width: 300px;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.popup ul {
+    list-style: none;
+}
+
+.popup ul li {
+    padding: 5px 0;
+}
+
+/*plan trip section */
+
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Travel Options Section */
+.travel-options {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.option:hover {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+
+.option img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.option p {
+    font-size: 14px;
+    color: #333;
+}
+
+.option.active {
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+}
+
+.table-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#table-content {
+    padding: 20px;
+}
+
+/* Styling for Radio buttons */
+.radio-buttons {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.radio-buttons label {
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.radio-buttons input[type="radio"] {
+    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+    accent-color: #4caf50; /* Green for the accent color of the radio buttons */
+}
+
+/* Styling for the Search button */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #45a049;
+}
+
+/* Styling for the tables section */
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+}
+
+.table-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#table-content {
+    padding: 20px;
+}
+
+/* Styling for Radio buttons */
+.radio-buttons {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.radio-buttons label {
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.radio-buttons input[type="radio"] {
+    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+    accent-color: #4caf50; /* Green for the accent color of the radio buttons */
+    border-radius: 50%; /* Adds circular border-radius to the radio buttons */
+}
+
+/* Styling for the Search button */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #45a049;
+}
+
+/* Styling for input elements */
+input[type="radio"], input[type="button"], .search-button {
+    border-radius: 8px; /* Adds border radius to all input types */
+}
+
+/* Styling for the tables section */
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+}
+
+.table-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#table-content {
+    padding: 20px;
+}
+
+/* Styling for Radio buttons */
+.radio-buttons {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.radio-buttons label {
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.radio-buttons input[type="radio"] {
+    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+    accent-color: #4caf50; /* Green for the accent color of the radio buttons */
+    border-radius: 50%; /* Adds circular border-radius to the radio buttons */
+}
+
+/* Styling for the Search button */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.search-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05); /* Slight scale-up effect on hover */
+}
+
+.search-button:active {
+    background-color: #388e3c; /* Darker green on click */
+    transform: scale(0.98); /* Slight scale-down effect on click */
+}
+
+/* Styling for input elements */
+input[type="radio"], input[type="button"], .search-button {
+    border-radius: 8px; /* Adds border radius to all input types */
+}
+
+/* Styling for the tables section */
+#table-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.table-container table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table-container th,
+.table-container td {
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+}
+
+.table-container th {
+    background-color: black;
+    color: white;
+}
+
+.table-container tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table-container tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Styling for tables in case of empty selection */
+.table-container .no-table {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    padding: 40px;
+}

@@ -1,0 +1,103 @@
+/* verify.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .verify-container {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .print-button {
+    padding: 0.5rem 1.2rem;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .print-button:hover {
+    background-color: #1e40af;
+  }
+  
+  .printable {
+    max-width: 600px;
+    margin: auto;
+    padding: 1.5rem;
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    color: #111827;
+    text-align: left;
+    font-size: 0.9rem;
+  }
+  
+  .title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #1e3a8a;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #374151;
+    text-align: center;
+  }
+  
+  .agency-info p,
+  .trip-info p,
+  .hotel-info p {
+    margin: 0.3rem 0;
+  }
+  
+  .hotel-image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-top: 0.5rem;
+    border-radius: 6px;
+  }
+  
+  .error-text {
+    color: #dc2626;
+    font-weight: 600;
+    margin-top: 2rem;
+  }
+  
+  .update-status {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: #6b7280;
+  }
+  
+  /* Print Styles */
+  @media print {
+    .print-button {
+      display: none;
+    }
+  
+    .verify-container {
+      padding: 0;
+    }
+  
+    body {
+      background-color: white;
+    }
+  
+    .printable {
+      box-shadow: none;
+      border: none;
+      background: white;
+    }
+  }
+  

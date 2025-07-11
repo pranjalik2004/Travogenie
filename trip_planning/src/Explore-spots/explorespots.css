@@ -1,0 +1,297 @@
+/* General Styles */
+.explore-spots-container {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Full Screen Container */
+.explore-spots-container.full-screen {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 10px;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Main Location Image - Full Width */
+.location-image-container {
+  width: 50%; /* Increased size to 50% */
+  height: 70vh; /* Adjusted height to make it larger */
+  overflow: hidden;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Vertically center the image */
+}
+
+.location-image {
+  width: 100%; /* Set to 100% of the container's width */
+  max-height: 800px; /* Increased max height for a bigger image */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  display: block;
+  margin: 0 auto; /* Horizontally centers the image */
+}
+
+/* Spot Details Section */
+.spot-details {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 5px;
+  padding-top: 5px;
+}
+
+.spot-name {
+  font-size: 2.5em;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.spot-location {
+  font-size: 1.2em;
+  margin-top: 5px;
+  color: #777;
+}
+
+/* Sections for Best Season, Packages, Hotels, and Attractions */
+.best-season-section,
+.packages-section,
+.hotels-section,
+.attractions-section {
+  margin-top: 30px;
+}
+
+.best-season-section h3,
+.packages-section h3,
+.hotels-section h3,
+.attractions-section h3 {
+  font-size: 1.8em;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+/* Packages Section */
+.packages-section .package-item {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.packages-section .package-item h4 {
+  font-size: 1.3em;
+  color: #34495e;
+  margin-bottom: 5px;
+}
+
+.packages-section .package-item p {
+  color: #555;
+  font-size: 1em;
+}
+
+/* Grid Layout for Hotels and Attractions */
+.hotel-grid,
+.attraction-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Hotel Card */
+.hotel-card,
+.attraction-card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: transform 0.3s;
+}
+
+.hotel-card:hover,
+.attraction-card:hover {
+  transform: translateY(-5px);
+}
+
+.hotel-image,
+.attraction-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.hotel-name,
+.attraction-name {
+  font-size: 1.3em;
+  color: #34495e;
+  margin-bottom: 5px;
+}
+
+.hotel-address,
+.hotel-price {
+  color: #555;
+  font-size: 0.9em;
+}
+
+.hotel-description {
+  color: #666;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/* Error Message */
+.explore-spots-container .error {
+  color: #e74c3c;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .location-image-container {
+    height: 50vh; /* Reduce height for smaller screens */
+  }
+
+  .spot-name {
+    font-size: 2em;
+  }
+
+  .spot-location {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .location-image-container {
+    height: 40vh;
+  }
+
+  .spot-name {
+    font-size: 1.8em;
+  }
+
+  .spot-location {
+    font-size: 0.9em;
+  }
+}
+
+.plan-trip-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.plan-trip-button {
+  background: linear-gradient(135deg, #ff7eb3, #ff758c);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(255, 117, 140, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.plan-trip-button:hover {
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(255, 117, 140, 0.6);
+}
+
+.plan-trip-button:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 5px rgba(255, 117, 140, 0.4);
+}
+
+/* --- NEW Styles for Wishlist --- */
+
+/* Wrapper for Spot Title and Wishlist Button */
+.spot-title-wishlist-wrapper {
+  display: flex; /* Use flexbox to place items side-by-side */
+  align-items: center; /* Vertically align items */
+  justify-content: center; /* Center the group (adjust if needed) */
+  margin-bottom: 10px; /* Adjust spacing below */
+  position: relative; /* For potential absolute positioning inside if needed */
+}
+
+/* Adjust spot name margin if needed within the flex container */
+.spot-title-wishlist-wrapper .spot-name {
+  margin: 0; /* Remove default margins if interfering */
+  margin-right: 15px; /* Add space between title and button */
+  flex-grow: 0; /* Prevent title from taking all space if needed */
+}
+
+
+/* Wishlist Button Styling */
+.wishlist-toggle-button {
+  background: none;
+  border: none;
+  padding: 5px; /* Clickable area */
+  margin: 0; /* Remove default margins */
+  cursor: pointer;
+  display: inline-flex; /* Align icon/spinner inside */
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8em; /* Size of the heart icon */
+  color: #aaa; /* Default empty heart color (grey) */
+  transition: color 0.2s ease-in-out, transform 0.2s ease;
+}
+
+.wishlist-toggle-button:hover:not(:disabled) {
+  transform: scale(1.15); /* Slight grow effect on hover */
+  color: #888; /* Slightly darker grey on hover */
+}
+
+.wishlist-toggle-button.active {
+  color: #e74c3c; /* Red color for active (filled) heart */
+}
+
+.wishlist-toggle-button.active:hover:not(:disabled) {
+  color: #c0392b; /* Darker red on hover when active */
+}
+
+.wishlist-toggle-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Wishlist Loading Spinner */
+.wishlist-spinner {
+  width: 1em; /* Size relative to button font-size */
+  height: 1em;
+  border: 2px solid rgba(100, 100, 100, 0.2); /* Light border */
+  border-left-color: #888; /* Spinner color */
+  border-radius: 50%;
+  display: inline-block;
+  animation: wishlist-spin 1s linear infinite;
+}
+
+@keyframes wishlist-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Wishlist Action Error Message */
+.wishlist-action-error {
+  color: #e74c3c; /* Error color */
+  font-size: 0.85em;
+  text-align: center; /* Center below title/button */
+  margin-top: 5px; /* Space above the error */
+  margin-bottom: 10px; /* Space below the error */
+  min-height: 1.2em; /* Prevent layout jump when error appears/disappears */
+}
+
+/* --- End NEW Styles for Wishlist --- */

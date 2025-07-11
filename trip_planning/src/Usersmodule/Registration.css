@@ -1,0 +1,79 @@
+/* Registration.css */
+
+.registration-form {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.registration-form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.registration-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.registration-form input,
+.registration-form select {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+.registration-form input:focus,
+.registration-form select:focus {
+  border-color: #007bff; /* Change to your desired focus color */
+  outline: none;
+}
+
+.registration-form button {
+  padding: 10px;
+  background-color: #007bff; /* Primary button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.registration-form button:hover {
+  background-color: #0056b3; /* Darker shade for hover */
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .registration-form {
+      width: 90%; /* Make it responsive on smaller screens */
+  }
+}
+
+.success-message {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+/* Prevent user from entering more than 10 digits */
+input[type="tel"] {
+  ime-mode: disabled; /* Disables input from virtual keyboards */
+}
